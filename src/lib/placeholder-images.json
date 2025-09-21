@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "software-engineer",
+      "description": "A person coding on a laptop in a modern office.",
+      "imageUrl": "https://picsum.photos/seed/sw-eng/600/400",
+      "imageHint": "developer code"
+    },
+    {
+      "id": "data-scientist",
+      "description": "Visualizations and charts on multiple computer screens.",
+      "imageUrl": "https://picsum.photos/seed/data-sci/600/400",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "ux-designer",
+      "description": "A person sketching wireframes in a notebook.",
+      "imageUrl": "https://picsum.photos/seed/ux-design/600/400",
+      "imageHint": "design wireframe"
+    },
+    {
+      "id": "product-manager",
+      "description": "A team having a discussion around a whiteboard with sticky notes.",
+      "imageUrl": "https://picsum.photos/seed/prod-man/600/400",
+      "imageHint": "team meeting"
+    }
+  ]
+}
