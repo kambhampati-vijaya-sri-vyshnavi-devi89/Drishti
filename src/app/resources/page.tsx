@@ -47,7 +47,9 @@ const suggestedTopics = [
 ];
 
 
-export default function ResourcesPage() {
+import { Suspense } from 'react';
+
+function ResourcesPageInner() {
   const [resources, setResources] = useState<Resources | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -97,7 +99,6 @@ export default function ResourcesPage() {
     form.setValue('query', topic);
     onSubmit({ query: topic });
   };
-
 
   const renderLoadingState = () => (
     <div className="space-y-8">
@@ -303,5 +304,13 @@ export default function ResourcesPage() {
       {isLoading ? renderLoadingState() : error ? renderErrorState() : resources ? renderResults() : renderEmptyState()}
 
     </div>
+  );
+}
+
+export default function ResourcesPage() {
+  return (
+    <Suspense>
+      <ResourcesPageInner />
+    </Suspense>
   );
 }
